@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main {
+  display: grid;
+  width: 400px;
+  height: 600px;
+  padding: 20px;
+  background-color: black;
+  border-radius: 10px;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px repeat(5, 1fr);
+}
+#display{
+    grid-column: span 4;
+    text-align: end;
+    font-size: 40px;
+}
+#clear{
+    grid-column: span 2;
+}
+
